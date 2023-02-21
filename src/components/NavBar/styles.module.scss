@@ -1,0 +1,50 @@
+.navbarContainer {
+  background-color: #35b234;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 10px;
+
+  .title {
+    margin-right: auto;
+    color: white;
+    font-size: 2em;
+  }
+
+  ul {
+    display: flex;
+    margin: 0 auto;
+
+    li {
+      display: flex;
+      list-style: none;
+      margin: auto 20px;
+
+      @media only screen and (max-width: 600px) {
+        margin: auto 3px;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        border: 1px solid white;
+        padding: 6px 15px 10px 15px;
+        border-radius: 4px;
+
+        &:hover {
+          color: #35b234;
+          background-color: white;
+        }
+
+        @media only screen and (max-width: 600px) {
+          margin: 0 0 0.5em 0;
+          font-size: 0.8em;
+          padding: 2px;
+          width: 50px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
